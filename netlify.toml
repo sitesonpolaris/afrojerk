@@ -5,7 +5,7 @@
   ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF ./src"
   [build.environment]
     Content-Security-Policy = "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.googleapis.com https://*.gstatic.com; img-src 'self' data: https://*.googleapis.com https://*.gstatic.com https://*.supabase.co https://images.unsplash.com https://flagcdn.com; connect-src 'self' https://*.googleapis.com https://*.gstatic.com https://*.supabase.co; object-src 'none';"
-    VITE_GOOGLE_MAPS_API_KEY = "AIzaSyBEwiIYnLURFav4ZzvK9YKbVFJLCuEBXGE"
+    VITE_GOOGLE_MAPS_API_KEY = "$VITE_GOOGLE_MAPS_API_KEY"
 
 [dev]
   command = "npm run dev"
